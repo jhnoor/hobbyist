@@ -1,0 +1,68 @@
+.karma {
+  display: flex;
+  flex-flow: column;
+  width: 30px;
+  height: 40px;
+  justify-content: space-between;
+}
+
+.karma-count {
+  font-size: 12px;
+  color: #c2c2c2;
+  line-height: 2;
+  white-space: nowrap;
+}
+
+.number-of-comments {
+  font-size: 12px;
+  background-color: #c2c2c2;
+  line-height: 1;
+  color: #4d4d4d;
+  padding: 0.1rem 0.5rem;
+  border-radius: 10px;
+}
+
+.karma > button {
+  padding: 0.1rem;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.karma > .up {
+  border: 1px solid orange;
+}
+
+.karma > .down {
+  border: 1px solid skyblue;
+}
+
+.karma > .up.active {
+  background-color: orange;
+}
+
+.karma > .down.active {
+  background-color: skyblue;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+
+  border-bottom: 10px solid #c2c2c2;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+
+  border-top: 10px solid #c2c2c2;
+}

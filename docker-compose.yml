@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+  nginx:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - webserver_network
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ./src/django:/django:ro
+
+  django:
+    restart: always
+    build: ./src/django
+    container_name: django
+    env_file: ./prod.env
+    expose:
+      - "5069"
+    networks:
+      - webserver_network
+      - database_network
+    volumes:
+      - ./src/django:/django
+    depends_on:
+      - postgres
+
+  postgres:
+    restart: always
+    image: postgres:9.6.2
+    container_name: postgres
+    env_file: ./prod.env
+    networks:
+      - database_network
+    volumes:
+      - postgres_volume:/var/lib/postgresql/data
+
+volumes:
+  django_volume:
+  postgres_volume:
+
+networks:
+  webserver_network:
+    driver: bridge
+  database_network:
+    driver: bridge

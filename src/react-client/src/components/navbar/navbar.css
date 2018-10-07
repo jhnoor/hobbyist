@@ -1,0 +1,85 @@
+
+.links-header {
+    font-family: sans-serif;
+    font-weight: 100;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background-color: #c4c4c4;
+    align-items: center;
+}
+
+.link {
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link.active {
+    text-decoration: underline;
+}
+
+.top-header {
+    background-color: #5c80bc;
+    padding: 0.4rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    color: #f5f5f5;
+    height: fit-content;
+    text-decoration: none;
+    font-weight: 100;
+    border-bottom: 3px solid #99d4ff;
+    text-transform: uppercase;
+}
+
+.logo:hover {
+    border-bottom-color: black;
+}
+
+.badge {
+    padding: 0.1rem 0.4rem;
+    border-radius: 2px;
+    line-height: 1.2;
+    font-weight: 100;
+    margin: 0.1rem;
+}
+
+.kudos-badge {
+    background-color: #e2a300;
+    color: #4d5061;
+}
+
+.mvp-badge {
+    background-color: #5c80bc;
+    color: #f5f5f5;
+}
+
+.user-header-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-header-info--name {
+    color: white;
+    margin: 0.2rem 0.5rem;
+    font-weight: 100;
+}
+
+.login {
+    color: white;
+    margin: 0.2rem 0.5rem;
+    font-weight: 100;
+}
+
+.login:hover {
+    text-decoration: underline;
+}

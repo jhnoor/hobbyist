@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  django:
+    command: bash docker-entrypoint.dev.sh
+    env_file: ./dev.env
+
+  postgres:
+    volumes:
+      - ./postgres/scripts:/scripts
+    env_file: ./dev.env

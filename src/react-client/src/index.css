@@ -1,0 +1,115 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Gothic A1", sans-serif;
+    background-color: rgb(234, 243, 248);
+}
+
+a {
+    text-decoration: none;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.page-title {
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 100;
+    margin: 0.5rem 1rem;
+    border-bottom: 2px solid #99d4ff;
+    width: fit-content;
+}
+
+.page-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 2px solid #99d4ff;
+    margin-bottom: 0.5rem;
+}
+
+.page-container {
+    padding: 0.2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 14px;
+    font-weight: 00;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: middle;
+    color: #f5f5f5;
+    padding: 0.4rem;
+    border-radius: 3px;
+    border: none;
+}
+
+.btn:hover {
+    filter: brightness(110%);
+}
+
+.btn-success {
+    background-color: #52c248;
+}
+
+.btn-primary {
+    background-color: #5c80bc;
+}
+
+.btn-default {
+    background-color: #f5f5f5;
+    color: #4d4d4d;
+}
+
+.list {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 0.8rem;
+}
+
+.input-group > label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.input-group > input[type="text"],
+.input-group > input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #5c80bc;
+    font-size: 18px;
+    padding: 0.1rem 0.3rem;
+    background-color: transparent;
+    outline: none;
+}
+
+.input-group > textarea {
+    border: 1px solid #5c80bc;
+    border-radius: 3px;
+    outline: none;
+    resize: none;
+    height: 5rem;
+    font-size: 14px;
+    padding: 0.2rem;
+}
+
+.flex {
+    display: flex
+}
+
+.flex-flow-row {
+    flex-flow: row
+}
