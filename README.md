@@ -1,4 +1,4 @@
-# 💻 The React application
+# Hobbyist
 
 ## Requirements
 
